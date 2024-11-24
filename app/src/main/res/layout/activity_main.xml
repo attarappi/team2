@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.naver.maps.map.sleep.MainActivity"
+    android:background="@color/white">
+
+    <!--로고 -->
+    <ImageView
+        android:id="@+id/app_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/app_icon"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="117dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:importantForAccessibility="no" />
+
+    <!--실행 버튼 -->
+    <ImageView
+        android:id="@+id/start_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/start_icon"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="408dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:importantForAccessibility="no" />
+
+    <com.tomer.fadingtextview.FadingTextView
+        android:id="@+id/fading_TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.877"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp" />
+
+
+
+</LinearLayout>

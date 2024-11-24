@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 음악재생목록 도형 -->
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:width="430dp"
+    android:height="79dp"
+    android:viewportWidth="430"
+    android:viewportHeight="79"
+    tools:ignore="VectorRaster">
+    <group>
+        <clip-path
+            android:pathData="M30 0H400C416.569 0 430 13.4315 430 30V49C430 65.5685 416.569 79 400 79H30C13.4315 79 0 65.5685 0 49V30C0 13.4315 13.4315 0 30 0Z"
+            />
+        <path
+            android:pathData="M0 0V79H430V0"
+            android:fillColor="#FFFFFF"
+            />
+        <path
+            android:pathData="M30 0H400C416.569 0 430 13.4315 430 30V49C430 65.5685 416.569 79 400 79H30C13.4315 79 0 65.5685 0 49V30C0 13.4315 13.4315 0 30 0Z"
+            android:strokeWidth="6"
+            android:strokeColor="#000000"
+            />
+    </group>
+</vector>

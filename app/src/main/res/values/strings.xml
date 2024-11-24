@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="warning">경각심을 주는 문구</string>
+    <string name="on_off"><![CDATA[on & off]]></string>
+    <string name="restarea">졸음 쉼터 안내</string>
+    <string name="music">음악 파일 관리</string>
+    <string name="Search">Search</string>
+    <string name="music_Name">노래 제목</string>
+    <string name="permission_rationale">이 앱은 정상적인 동작을 위해 카메라, 오디오, 저장소 권한이 필요합니다.</string>
+    <string name="permission_camera_rationale">카메라 권한이 필요합니다.</string>
+    <string name="ok">확인</string>
+    <string name="no_camera_permission">카메라 권한이 거부되었습니다.</string>
+    <string name="low_storage_error">저장소 공간이 부족합니다.</string>
+
+</resources>

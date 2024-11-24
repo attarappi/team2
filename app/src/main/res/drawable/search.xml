@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 음악서치 도형 -->
+    <vector
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:aapt="http://schemas.android.com/aapt"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:width="430dp"
+        android:height="51dp"
+        android:viewportWidth="430"
+        android:viewportHeight="51"
+        tools:ignore="VectorRaster">
+        <group>
+            <clip-path
+                android:pathData="M8 0H422C426.418 0 430 3.58172 430 8V43C430 47.4183 426.418 51 422 51H8C3.58172 51 0 47.4183 0 43V8C0 3.58172 3.58172 0 8 0Z"
+                />
+            <path
+                android:pathData="M0 0V51H430V0"
+                android:fillColor="#FFFFFF"
+                />
+            <path
+                android:pathData="M8 0H422C426.418 0 430 3.58172 430 8V43C430 47.4183 426.418 51 422 51H8C3.58172 51 0 47.4183 0 43V8C0 3.58172 3.58172 0 8 0Z"
+                android:strokeWidth="2"
+                android:strokeColor="#E0E0E0"
+                />
+        </group>
+    </vector>

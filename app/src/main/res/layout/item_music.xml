@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <!-- 음악 이름 -->
+    <TextView
+        android:id="@+id/tvMusicName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:text="Music Name"
+        android:textSize="16sp"
+        android:textColor="@android:color/black" />
+
+    <!-- 삭제 버튼 -->
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="삭제"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_dark" />
+</LinearLayout>

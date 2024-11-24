@@ -1,0 +1,73 @@
+@startuml
+class com.naver.maps.map.sleep.MainActivity {
+~ ImageView Start_Icon
+- FadingTextView fadingTextView
+- Handler handler
+- String[] texts
+- int index
+- Runnable runnable
+# void onCreate(Bundle)
+# void onDestroy()
+}
+
+
+class com.naver.maps.map.sleep.MainView {
+~ ImageView Image_Restarea
+~ ImageView CamView
+- FadingTextView fadingTextView
+- Handler handler
+- String[] texts
+- int index
+- Runnable runnable
++ void onCreate(Bundle)
+# void onDestroy()
+}
+
+
+class com.naver.maps.map.sleep.Rest_area {
+- {static} int LOCATION_PERMISSION_REQUEST_CODE
+- MapView mapView
+- NaverMap naverMap
+- FusedLocationSource locationSource
+- FusedLocationProviderClient fusedLocationClient
+- List<Marker> markers
+# void onCreate(Bundle)
++ void onMapReady(NaverMap)
+- void loadRestAreasFromCSV()
+- void showPath(Location,LatLng)
++ void onRequestPermissionsResult(int,String[],int[])
+}
+
+
+class com.naver.maps.map.sleep.MusicPlayList {
+- {static} int REQUEST_PERMISSION
+- ListView listViewMP3
+- Button btnPlay
+- TextView tvMP3
+- EditText searchBar
+- SeekBar sbMP3
+- ArrayList<String> mp3List
+- ArrayList<String> filteredList
+- ArrayAdapter<String> adapter
+- String selectedMP3
+- String mp3Path
+- MediaPlayer mPlayer
+- boolean isPaused
+# void onCreate(Bundle)
++ void onRequestPermissionsResult(int,String[],int[])
+- void loadMP3Files()
+- void filterList(String)
+- void playMusic()
+- void pauseMusic()
+- void stopMusic()
+}
+
+
+
+
+androidx.appcompat.app.AppCompatActivity <|-- com.naver.maps.map.sleep.MainActivity
+android.app.Activity <|-- com.naver.maps.map.sleep.MainView
+com.naver.maps.map.OnMapReadyCallback <|.. com.naver.maps.map.sleep.Rest_area
+androidx.appcompat.app.AppCompatActivity <|-- com.naver.maps.map.sleep.Rest_area
+androidx.appcompat.app.AppCompatActivity <|-- com.naver.maps.map.sleep.MusicPlayList
+@enduml
